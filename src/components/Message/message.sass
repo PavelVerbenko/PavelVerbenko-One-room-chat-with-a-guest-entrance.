@@ -1,0 +1,30 @@
+.message_block
+    background: #E8F2F8
+    border-radius: 15px
+    border: 2px solid #dedede
+    overflow: hidden
+
+.meassage_text
+    display: block
+    font-family: "Roboto"
+    padding: 10px
+
+    &:empty
+        padding: 0
+
+.meassage_img
+    position: relative
+    height: 200px
+    img
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        object-fit: cover
+
+.message_wrapper
+    display: flex
+    flex-direction: column
+    gap: 20px
+    

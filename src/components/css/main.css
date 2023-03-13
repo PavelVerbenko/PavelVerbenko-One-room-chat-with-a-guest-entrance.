@@ -1,0 +1,21 @@
+.enter {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Roboto";
+  border-radius: 25px;
+  background: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.enter:hover {
+  background: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+}

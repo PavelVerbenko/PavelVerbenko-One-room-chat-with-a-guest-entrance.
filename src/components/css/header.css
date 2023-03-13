@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.header_title {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 21px;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: #1B1E20;
+  padding: 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.header_close {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+}
+
+.users_list {
+  position: absolute;
+  background-color: #1B1E20;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  transition: transform 0.8s;
+}
+.users_list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.users_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 80px;
+  list-style-type: none;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.users_list li {
+  position: relative;
+  margin: 0;
+}
+.users_list li:first-child::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: -10px;
+  border-radius: 2px;
+}
+
+.users_list_hidden {
+  transform: translateY(-100%);
+}
